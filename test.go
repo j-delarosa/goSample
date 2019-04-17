@@ -7,9 +7,10 @@ import (
 type Animal struct {
 	NumberOfLegs int
 	Name         string
-	func (a Animal) GetLegCount() int {
-		return a.NumberOfLegs
-	}
+}
+
+func (doggy Dog) GetLegCount() int {
+	return doggy.NumberOfLegs
 }
 
 func (doggy Dog) bark() {
